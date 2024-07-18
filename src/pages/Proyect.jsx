@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCss3, FaCss3Alt, FaHtml5, FaJava, FaJs } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Proyect = () => {
@@ -19,10 +20,14 @@ const Proyect = () => {
             <p className="font-merriweather text-center">
               Jun - 2024 / Jul - 2024
             </p>
-            <div className="flex justify-around">
+            <div className="flex justify-evenly">
+              <FaHtml5 size={25} />
               <p className="font-playfair">HTML</p>
+              <FaCss3Alt size={25} />
               <p className="font-playfair">CSS</p>
+              <FaJs size={25} />
               <p className="font-playfair">JavaScript</p>
+              <FaJava size={25} />
               <p className="font-playfair">Java</p>
             </div>
             <a
@@ -46,10 +51,14 @@ const Proyect = () => {
             <p className="font-merriweather text-center">
               May - 2024 / Jun - 2024
             </p>
-            <div className="flex justify-around">
+            <div className="flex justify-evenly">
+            <FaHtml5 size={25} />
               <p className="font-playfair">HTML</p>
+              <FaCss3Alt size={25} />
               <p className="font-playfair">CSS</p>
+              <FaJs size={25} />
               <p className="font-playfair">JavaScript</p>
+              <FaJava size={25} />
               <p className="font-playfair">Java</p>
             </div>
             <a
@@ -73,9 +82,12 @@ const Proyect = () => {
             <p className="font-merriweather text-center">
               Abr - 2024 / May - 2024
             </p>
-            <div className="flex justify-around">
+            <div className="flex justify-evenly">
+              <FaHtml5 size={25} />
               <p className="font-playfair">HTML</p>
+              <FaCss3Alt size={25} />
               <p className="font-playfair">CSS</p>
+              <FaJs size={25} />
               <p className="font-playfair">JavaScript</p>
             </div>
             <a
