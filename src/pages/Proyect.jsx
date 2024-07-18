@@ -26,7 +26,7 @@ const Proyect = () => {
               <p className="font-playfair">Java</p>
             </div>
             <a
-              href=""
+              href="https://github.com/JoaquinNeulist/AquaBattles.git"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-500 text-white w-11/12 text-center self-center rounded-lg my-2"
