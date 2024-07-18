@@ -13,10 +13,7 @@ const About = () => {
         <h1 className='text-white text-5xl m-8'>Sobre mí</h1>
         <section className='flex flex-col h-[200px]'>
             <h2 className='text-3xl text-white m-8'>Skill blandas</h2>
-            <h2 className='text-lg text-white mx-8 sm:hidden'>
-              Soy comunicativo, empático, proactivo y organizado.
-            </h2>
-            <h2 className='text-lg text-white mx-8 hidden sm:block'>
+            <h2 className='text-lg text-white mx-8 sm:text-sm'>
               Soy un profesional colaborador, comunicativo, empático, proactivo y organizado. Siempre busco formas de mejorar y ayudar al equipo. Me considero confiable y decidido, y tengo un buen sentido del humor, lo que facilita un ambiente de trabajo positivo y productivo, permitiéndome integrarme eficazmente en cualquier equipo.
             </h2>
         </section>
