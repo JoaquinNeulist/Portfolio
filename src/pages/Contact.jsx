@@ -162,7 +162,7 @@ const Contact = () => {
               ></textarea>
               {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
               <p className="text-gray-500 text-sm mt-1">{formData.message.length}/300 caracteres</p>
-              {formData.message.length < 50 && (
+              {formData.message.length > 0 && formData.message.length < 50 && (
                 <p className="text-red-500 text-sm">El mensaje debe tener al menos 50 caracteres.</p>
               )}
             </div>
