@@ -1,6 +1,6 @@
 import React from "react";
-import { FaCss3, FaCss3Alt, FaHtml5, FaJava, FaJs } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaCss3Alt, FaHtml5, FaJava, FaJs } from "react-icons/fa";
+
 
 const Proyect = () => {
   return (
