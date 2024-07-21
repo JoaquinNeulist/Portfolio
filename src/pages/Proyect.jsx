@@ -99,6 +99,35 @@ const Proyect = () => {
               Repository
             </a>
           </div>
+          <div className="border border-gray-500 flex flex-col bg-white rounded-3xl w-[275px] lg:w-[300px]">
+            <img
+              src="/tictactoe.jpg"
+              alt=""
+              className="w-full h-[175px] object-cover rounded-2xl"
+            />
+            <h2 className="text-2xl font-merriweather text-center">
+              Tic Tac Toe
+            </h2>
+            <p className="font-merriweather text-center">
+              Jul - 2024
+            </p>
+            <div className="flex justify-evenly">
+              <FaHtml5 size={25} />
+              <p className="font-playfair">HTML</p>
+              <FaCss3Alt size={25} />
+              <p className="font-playfair">CSS</p>
+              <FaJs size={25} />
+              <p className="font-playfair">JavaScript</p>
+            </div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={`https://github.com/JoaquinNeulist/TicTacToeGame`}
+              className="bg-blue-500 text-white text-center w-11/12 self-center rounded-lg my-2"
+            >
+              Repository
+            </a>
+          </div>
         </section>
       </div>
     </div>
