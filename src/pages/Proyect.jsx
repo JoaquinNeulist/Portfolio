@@ -103,7 +103,7 @@ const Proyect = () => {
             <img
               src="/tictactoe.jpg"
               alt=""
-              className="w-full h-[175px] object-cover rounded-2xl"
+              className="w-full h-[175px] object-contain rounded-2xl"
             />
             <h2 className="text-2xl font-merriweather text-center">
               Tic Tac Toe
