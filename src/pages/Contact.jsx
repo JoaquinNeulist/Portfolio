@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,7 +20,7 @@ const Contact = () => {
     });
     setErrors({
       ...errors,
-      [e.target.name]: '' // Limpia el error al cambiar el valor
+      [e.target.name]: '' 
     });
   };
 
@@ -61,7 +62,7 @@ const Contact = () => {
     
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
-      return; // No enviar si hay errores
+      return; 
     }
 
     emailjs.sendForm('service_iae4hos', 'template_uz5c8am', e.target, 'ZXc1crZlNwdipy1wG')
@@ -81,8 +82,19 @@ const Contact = () => {
     });
   };
 
+  const variants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 }
+  };
+
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <motion.div
+      className="min-h-screen bg-gray-100 flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+      transition={{ duration: 0.5 }}
+    >
       <div className="max-w-md w-full space-y-8">
         <div className="card bg-white p-6 rounded-lg shadow-lg">
           <img src="/myphoto.jpg" alt="Tu Foto" className="w-32 h-32 rounded-full object-cover mx-auto" />
@@ -177,7 +189,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

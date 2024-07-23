@@ -14,7 +14,7 @@ const Layout = () => {
       <main className="flex-grow">
         <Outlet />
       </main>
-      <Footer />
+      <Footer className="mt-0" />
     </div>
   );
 };
