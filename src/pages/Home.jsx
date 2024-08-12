@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navegationbar from '../components/navegationbar'; 
-import Footer from '../components/Footer';
+
 
 const Home = () => {
   return (
