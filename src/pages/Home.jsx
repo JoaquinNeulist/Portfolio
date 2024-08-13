@@ -1,39 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 const Home = () => {
   return (
-    <div className="flex flex-col"> 
-      <div
-        className="absolute inset-0 -z-10 w-full h-full bg-center bg-cover"
-        style={{
-          backgroundImage: `url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xtZ3JqYmJ6aHB5aDdldHh0bnM1dTIyaWh1YjA4d3VhZzhmdjhndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2RgN7WUjeUUXm0/giphy.gif)`,
-        }}
-      ></div>
-      <main className="flex-grow mt-12 text-center md:mt-36 lg:mt-24">
-        <section className="flex flex-col gap-4 mx-4 items-center">
-          <h1 className="font-merriweather text-white text-4xl">Soy Joaquin Neulist.</h1>
-          <h2 className="font-merriweather text-white text-3xl">Desarrollador Fullstack y amante de la tecnología.</h2>
+    <div className="relative flex flex-col min-h-screen overflow-hidden">
+      <div className="absolute inset-0 w-full h-full -z-10 overflow-hidden">
+        <div
+          className="bg-cover bg-center w-full h-full"
+          style={{
+            backgroundImage: `url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xtZ3JqYmJ6aHB5aDdldHh0bnM1dTIyaWh1YjA4d3VhZzhmdjhndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2RgN7WUjeUUXm0/giphy.gif)`,
+          }}
+        />
+        <div className="absolute inset-0 bg-black opacity-50"></div> {/* Capa de superposición */}
+      </div>
+
+      <main className="flex-grow flex flex-col items-center justify-center text-center px-4">
+        <section className="flex flex-col gap-4 items-center text-white">
+          <h1 className="font-merriweather text-4xl md:text-5xl lg:text-6xl">Soy Joaquin Neulist.</h1>
+          <h2 className="font-merriweather text-3xl md:text-4xl lg:text-5xl">Desarrollador Fullstack y amante de la tecnología.</h2>
         </section>
-        <section className="flex mt-4 flex-col gap-8 justify-between md:flex-row md:justify-center md:gap-12 md:mt-24 lg:flex-row lg:justify-center lg:gap-18 lg:mt-24 ">
+
+        <section className="flex mt-8 flex-col gap-8 justify-center md:flex-row md:gap-12 lg:gap-16">
           <Link 
             to="/about" 
-            className="w-[250px] md:w-[200px] self-center bg-gradient-to-l from-fuchsia-800 via-violet-800 to-violet-800 text-white px-6 py-3 border rounded-full shadow-lg hover:bg-gray-600 link-hover link-click  lg:w-[250px]"
+            className="w-48 md:w-56 lg:w-64 bg-gradient-to-l from-fuchsia-800 via-violet-800 to-violet-800 text-white px-6 py-3 border rounded-full shadow-lg hover:bg-gray-600 link-hover link-click"
           >
-            Sobre mi
+            Sobre mí
           </Link>
           <Link 
             to="/projects" 
-            className="w-[250px] md:w-[200px] self-center bg-gradient-to-b from-fuchsia-800 to-violet-800 text-white px-6 py-3 rounded-full border shadow-lg hover:bg-gray-600 link-hover link-click  lg:w-[250px]"
+            className="w-48 md:w-56 lg:w-64 bg-gradient-to-b from-fuchsia-800 to-violet-800 text-white px-6 py-3 border rounded-full shadow-lg hover:bg-gray-600 link-hover link-click"
           >
             Proyectos
           </Link>
           <Link 
             to="/contact" 
-            className="w-[250px] md:w-[200px] self-center bg-gradient-to-r from-fuchsia-800 via-violet-800 to-violet-800 text-white px-6 border py-3 rounded-full shadow-lg hover:bg-gray-600 link-hover link-click  lg:w-[250px]"
-        >   
-        Contactame
+            className="w-48 md:w-56 lg:w-64 bg-gradient-to-r from-fuchsia-800 via-violet-800 to-violet-800 text-white px-6 py-3 border rounded-full shadow-lg hover:bg-gray-600 link-hover link-click"
+          >
+            Contáctame
           </Link>
         </section>
       </main>
