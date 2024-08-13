@@ -3,18 +3,13 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className="relative flex flex-col min-h-screen overflow-hidden">
-      <div className="absolute inset-0 w-full h-full -z-10 overflow-hidden">
-        <div
-          className="bg-cover bg-center w-full h-full"
-          style={{
-            backgroundImage: `url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xtZ3JqYmJ6aHB5aDdldHh0bnM1dTIyaWh1YjA4d3VhZzhmdjhndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2RgN7WUjeUUXm0/giphy.gif)`,
-          }}
-        />
-        <div className="absolute inset-0 bg-black opacity-50"></div> {/* Capa de superposición */}
-      </div>
-
-      <main className="flex-grow flex flex-col items-center justify-center text-center px-4">
+    <div
+      className="flex flex-col min-h-screen bg-cover bg-center"
+      style={{
+        backgroundImage: `url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xtZ3JqYmJ6aHB5aDdldHh0bnM1dTIyaWh1YjA4d3VhZzhmdjhndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2RgN7WUjeUUXm0/giphy.gif)`,
+      }}
+    >
+      <main className="flex-grow flex flex-col items-center justify-center text-center px-4 bg-black bg-opacity-50">
         <section className="flex flex-col gap-4 items-center text-white">
           <h1 className="font-merriweather text-4xl md:text-5xl lg:text-6xl">Soy Joaquin Neulist.</h1>
           <h2 className="font-merriweather text-3xl md:text-4xl lg:text-5xl">Desarrollador Fullstack y amante de la tecnología.</h2>
