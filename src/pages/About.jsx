@@ -1,7 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import MyCarousel from '../components/MyCarousel';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { motion } from "framer-motion";
+import MyCarousel from "../components/MyCarousel";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -17,32 +17,73 @@ const About = () => {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Habilidades Blandas</h2>
           <p className="leading-relaxed text-lg">
-            Soy un profesional colaborador, comunicativo, empático, proactivo y organizado. Siempre busco formas de mejorar y ayudar al equipo. Me considero confiable y decidido, y tengo un buen sentido del humor, lo que facilita un ambiente de trabajo positivo y productivo, permitiéndome integrarme eficazmente en cualquier equipo.
+            Soy un profesional colaborador, comunicativo, empático, proactivo y
+            organizado. Siempre busco formas de mejorar y ayudar al equipo. Me
+            considero confiable y decidido, y tengo un buen sentido del humor,
+            lo que facilita un ambiente de trabajo positivo y productivo,
+            permitiéndome integrarme eficazmente en cualquier equipo.
           </p>
         </section>
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-center mb-6">Tecnologías</h2>
+          <h2 className="text-2xl font-semibold text-center mb-6">
+            Tecnologías
+          </h2>
           <div className="rounded-lg overflow-hidden shadow-lg">
             <MyCarousel />
+          </div>
+        </section>
+        <section className="w-full mb-12">
+          <div className="w-full flex justify-center items-center flex-col">
+            <h2 className="text-2xl font-semibold mb-4">Experiencia</h2>
+            <table className="table-auto w-[75%] border-collapse border-white border-2">
+              <thead className="w-full">
+                <tr>
+                  <th className="text-white text-center align-middle border-2 border-white p-4">
+                    Empresa
+                  </th>
+                  <th className="text-white text-center align-middle border-2 border-white p-4">
+                    Fecha
+                  </th>
+                  <th className="text-white text-center align-middle border-2 border-white p-4">
+                    Puesto
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="w-full">
+                <tr>
+                  <td className="text-white text-center align-middle border-2 border-white p-4">
+                    QServices
+                  </td>
+                  <td className="text-white text-center align-middle border-2 border-white p-4">
+                    2024 - Actualmente
+                  </td>
+                  <td className="text-white text-center align-middle border-2 border-white p-4">
+                    Desarrollador/Analista Trainee
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
         <section className="text-center">
           <div className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Contacto</h2>
             <p className="leading-relaxed text-lg">
-              Estoy siempre abierto a nuevas oportunidades y desafíos. Si estás interesado en colaborar o simplemente quieres saber más sobre mí, no dudes en contactarme.
+              Estoy siempre abierto a nuevas oportunidades y desafíos. Si estás
+              interesado en colaborar o simplemente quieres saber más sobre mí,
+              no dudes en contactarme.
             </p>
           </div>
-            <Link
-              to="/contact"
-              className="bg-gradient-to-r from-fuchsia-800 via-violet-800 to-violet-800 text-white px-6 py-3 border rounded-full shadow-lg active:text-black active:bg-white"
-            >
-              ¡Hablemos!
-            </Link>
-          </section>
+          <Link
+            to="/contact"
+            className="bg-gradient-to-r from-fuchsia-800 via-violet-800 to-violet-800 text-white px-6 py-3 border rounded-full shadow-lg active:text-black active:bg-white"
+          >
+            ¡Hablemos!
+          </Link>
+        </section>
       </div>
     </motion.div>
   );
-}
+};
 
 export default About;
